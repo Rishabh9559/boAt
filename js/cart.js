@@ -1,31 +1,7 @@
-let counter = 0;
+let card=document.getElementById("cartContainer");
+let remove=document.getElementById("remove");
 
-function increment() {
-  counter++;
-}
-
-function decrement() {
-  counter--;
-}
-
-function get() {
-  return counter;
-}
-
-const inc = document.getElementById("increment");
-const input = document.getElementById("input");
-const dec = document.getElementById("decrement");
-
-inc.addEventListener("click", () => {
-  increment();
-  input.value = get();
+remove.addEventListener("click",()=>{
+  card.innerHTML="";
+  document.getElementById("price").innerHTML="0";
 });
-
-dec.addEventListener("click", () => {
-  if (input.value > 0) {
-    decrement();
-  }
-  input.value = get();
-});
-
-
