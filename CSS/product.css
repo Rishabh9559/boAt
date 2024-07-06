@@ -11,7 +11,7 @@
 }
 
 
-.item 
+a
 {
     text-decoration: none;
     color: #000;
@@ -31,6 +31,13 @@
    
 }
 
+.one{
+    font-size: 11px;
+    color:rgb(164, 8, 8);
+    font-weight: bold;
+    
+   
+}
 
 .product_container{
     display: flex;
