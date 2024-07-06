@@ -16,9 +16,8 @@
                  <input type="text" name="search" placeholder="search">
                 <a href="./Login.html"> <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Profile-1.png?v=1663762989" alt="me" style="width: 22px;height:22px"> </a>
                  
-             <a href="./cart.html">    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 22 22" style="enable-background:new 0 0 22 22;" xml:space="preserve" height="22" width="22" class="blank_cart">
-                     <style type="text/css">
-                      </style>
+             <a href="./cart.html">    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 22 22" style="enable-background:new 0 0 22 22;" xml:space="preserve" height="22" width="22">
+        
                      <path class="st0 header_cart_icon_svg" d="M14,6.1v1.2C14,7.6,14.4,8,14.7,8c0.4,0,0.7-0.3,0.7-0.7V6.1h1.4c0.6,0,1.1,0.4,1.2,1l1.4,12.2  c0.1,0.6-0.4,1.2-1,1.3c0,0-0.1,0-0.1,0H3.7c-0.6,0-1.2-0.5-1.2-1.2c0,0,0-0.1,0-0.1L4,7.1c0.1-0.6,0.6-1,1.2-1h1.4v1.2  C6.6,7.6,6.9,8,7.3,8S8,7.6,8,7.3V6.1H14z M15.4,4.7V4.4C15.4,2,13.5,0,11,0S6.6,2,6.6,4.4v0.2H5.2c-1.3,0-2.4,1-2.6,2.3L1.2,19.1  C1,20.5,2,21.8,3.4,22c0.1,0,0.2,0,0.3,0h14.5c1.4,0,2.6-1.2,2.6-2.6c0-0.1,0-0.2,0-0.3L19.4,7c-0.2-1.3-1.3-2.3-2.6-2.3H15.4z   M11,1.4c-1.7,0-3,1.4-3,3l0,0v0.2H14V4.4C14,2.8,12.7,1.4,11,1.4L11,1.4z"></path>
                      </svg> </a>
  
@@ -31,7 +30,7 @@
                 <div style="display: flex;">
                     <div class="cart_heading"> Shopping Bag</div> 
                 </div>
-                        <!-- items box -->
+            <div id="cartContainer">       
                 <div class="item_container">
                     <div class="item1">
                         <img class="items_img" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/ion-W_800x.png?v=1678780574" alt="boat">
@@ -42,18 +41,18 @@
                         <input  class="quanity"  type="number" placeholder="1" min="1">
                        </div>
                         <div class="remove1">
-                            <button class="remove" type="submit" placeholder="remove">remove</button>
+                            <button id="remove" class="remove" type="submit" placeholder="remove">remove</button>
                         </div>
                         <div class="price">
                                 <span>&#8377;999</span>
                         </div>
                     </div>
                 </div>
-                
+            </div>
                 <!-- total amount -->
                 <hr class="hr">
                 <div class="total_amount">
-                   <label>Total Amount : &#8377;</label> <span>999</span>
+                   <label>Total Amount : &#8377;</label> <span id="price">999</span>
                 </div>
                 <div style="text-align: right;">
                   <a href="./address.html" > <button  class="continue" type="submit">Continue</button> </a>
@@ -108,6 +107,6 @@
                 </div>
             </div>
         </footer>
-
+       <script src="../js/cart.js"></script>
     </body>
 </html>
